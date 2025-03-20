@@ -4,7 +4,6 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import Colors from '../constants/colors';
 
 const OrderItem = ({ order, expanded, onToggleExpand }) => {
-  // Format date string
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleString('en-US', {

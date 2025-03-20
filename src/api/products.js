@@ -1,4 +1,4 @@
-// Function to fetch products from the API
+
 export const fetchProducts = async () => {
     try {
       const response = await fetch('https://dummyjson.com/products');
@@ -10,7 +10,7 @@ export const fetchProducts = async () => {
     }
   };
   
-  // Function to fetch products by category
+
   export const fetchProductsByCategory = async (category) => {
     try {
       const response = await fetch(`https://dummyjson.com/products/category/${category}`);
@@ -22,7 +22,7 @@ export const fetchProducts = async () => {
     }
   };
   
-  // Function to fetch all categories
+
   export const fetchCategories = async () => {
     try {
       const response = await fetch('https://dummyjson.com/products/categories');

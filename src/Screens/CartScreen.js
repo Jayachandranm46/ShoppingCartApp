@@ -39,8 +39,7 @@ const CartScreen = ({ navigation }) => {
 
     try {
       const order = await saveOrder(items, total);
-      
-      // Show success message
+    
       Alert.alert(
         'Order Completed',
         `Your order ${order.orderNo} has been placed successfully.`,

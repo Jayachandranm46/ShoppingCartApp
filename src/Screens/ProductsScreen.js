@@ -31,15 +31,10 @@ const ProductsScreen = ({navigation}) => {
     dispatch(getCategories());
     dispatch(getProducts());
   
-    console.log('products',products);
-    console.log('categories',categories);
-    console.log('selectedCategory',selectedCategory)
-  
   }, [dispatch]);
 
 
   const handleCategorySelect = (category) => {
-    console.log('--------????>',category)
     dispatch(setSelectedCategory(category));
     
     if (category === '') {

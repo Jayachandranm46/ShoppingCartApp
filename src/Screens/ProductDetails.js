@@ -8,9 +8,6 @@ import Icon2 from 'react-native-vector-icons/AntDesign';
 const ProductDetailScreen = ({navigation}) => {
     const routes=useRoute()?.params?.selectedItem
     const product=routes
-    console.log('product',product)
-
-
   return (
     <View style={styles.container}>
       <View>

@@ -6,7 +6,7 @@ export const FETCH_PRODUCTS_FAILURE = 'FETCH_PRODUCTS_FAILURE';
 export const FETCH_CATEGORIES_SUCCESS = 'FETCH_CATEGORIES_SUCCESS';
 export const SET_SELECTED_CATEGORY = 'SET_SELECTED_CATEGORY';
 
-// Action to fetch all products
+
 export const getProducts = () => {
   return async dispatch => {
     dispatch({ type: FETCH_PRODUCTS_START });
@@ -26,7 +26,7 @@ export const getProducts = () => {
   };
 };
 
-// Action to fetch products by category
+
 export const getProductsByCategory = (category) => {
   return async dispatch => {
     dispatch({ type: FETCH_PRODUCTS_START });
@@ -46,7 +46,7 @@ export const getProductsByCategory = (category) => {
   };
 };
 
-// Action to fetch all categories
+
 export const getCategories = () => {
   return async dispatch => {
     try {
@@ -61,7 +61,7 @@ export const getCategories = () => {
   };
 };
 
-// Action to set selected category
+
 export const setSelectedCategory = (category) => ({
   type: SET_SELECTED_CATEGORY,
   payload: category,

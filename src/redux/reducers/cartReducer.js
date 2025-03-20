@@ -10,7 +10,7 @@ import {
     total: 0,
   };
   
-  // Helper function to calculate total
+
   const calculateTotal = (items) => {
     return items.reduce((sum, item) => sum + item.price * item.quantity, 0);
   };
@@ -24,14 +24,12 @@ import {
         let updatedItems;
         
         if (existingItemIndex >= 0) {
-          // Item already in cart, increase quantity
           updatedItems = state.items.map((item, index) => 
             index === existingItemIndex 
               ? { ...item, quantity: item.quantity + 1 }
               : item
           );
         } else {
-          // Add new item to cart
           updatedItems = [...state.items, { ...product, quantity: 1 }];
         }
         
